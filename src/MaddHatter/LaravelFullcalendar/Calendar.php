@@ -126,7 +126,8 @@ class Calendar
             return $this->id;
         }
 
-        $this->id = str_random(8);
+        // $this->id = str_random(8);
+        $this->id = \Illuminate\Support\Str::random(8);
 
         return $this->id;
     }
